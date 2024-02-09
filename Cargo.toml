@@ -1,0 +1,14 @@
+[package]
+name = "async_dsmr"
+version = "0.1.0"
+authors = ["Cornee Traas"]
+edition = "2021"
+
+description = "A tokio codec based asynchronous parser for DSMR Mode D frames"
+
+[dependencies]
+crc = "3.0.1"
+futures-util = "0.3.30"
+tokio = { version = "1", features = ["full"] }
+tokio-serial = "5.4.4"
+tokio-util = { version = "0.7.10", features = ["codec"] }
